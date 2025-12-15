@@ -2,7 +2,9 @@ from PIL import Image
 from telegram import Update
 from telegram.ext import Application, MessageHandler, ContextTypes, filters
 
-TOKEN = "7953399814:AAF358j-_DMSL4GSE8Ll07803vaIecaa0oY"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
+
 
 LOGO_PATH = "logo.png"
 
